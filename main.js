@@ -1,16 +1,22 @@
 
 let trafficGoal = 0;
 let leadsGoal = 0;
-// new total leads goal/conversion rate 1
-function webTrafficGoal() {
-      let var1 = document.querySelector("#ntlcalc").value
-      let var2 = document.querySelector("#wtCR").value
-      document.querySelector("#wtrcalc").innerText = Number(var1/var2);
-}
 
- // total sales goal / total leads + conversion rate
-function totalLeadsGoal(){
-      let var3 = document.querySelector("#wtrcalc").innerText.value
-      let var4 = document.querySelector("#tlCR").value
+ // New Total Leads goal is total sales goal / total leads goal CR
+ function totalLeadsGoal(){
+      let var3 = Number(document.querySelector("#TotalSales1").value)
+      let var4 = Number((document.querySelector("#tlCR").value)/100)
       document.querySelector("#ntlcalc").innerText = Number(var3/var4);
 }
+
+// New Total Leads Goal var1 and result of function totalleadsgoal / Conversion rate var2
+function webTrafficGoal() {
+      let var1 = Number(document.querySelector("#ntlcalc").innerText)
+      let var2 = Number(document.querySelector("#wbCR").value/100)
+      console.log("var1 is " + var1 + " and var2 is " + var2);
+      if((var1 == null) || (var2 == null)) {
+            document.querySelector(".error").style.display = "inline-block";
+      }else{
+            document.querySelector(".error").style.display = "none";
+            document.querySelector("#wtrcalc").innerText = Number(var1/var2);
+}}

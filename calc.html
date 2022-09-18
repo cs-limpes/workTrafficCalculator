@@ -4,22 +4,29 @@
       <title></title>
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel>
-      <link rel="stylesheet"  />
+      <link rel="stylesheet" href="style.css"  />
 </head>
 
 <body>
-      <img src = "logo.jpg" >
-      <form>
-            <label for="Conversion Rates">Conversion Rates</label>
-                  <input type="number" oninput="webTrafficGoal()" id="wbCR" name="wbCR"><br>
-            <label for="Total Leads Goal">Total Leads Goal</label>
-                  <input type="tlCR" oninput="totalLeadsGoal()" id="tlCR" name="TotalLeads1"><br>
-            <label for="Total Sales Goal">Total Sales Goal</label>
-                  <input type="number" oninput="totalLeadsGoal()" id="TotalSales1" name="TotalSales1"><br>
-            <h3>New Total Leads Goal:<span id="ntlcalc">0</span></h3>
-            <h3>Website Traffic Goal:<span id="wtrcalc">0</span></h3>
-      </form>
+      <div class="top">
+            <img src = "g2-logo-white.svg" >
+      </div>
+      <div class="inputs">
+            <form>
+                  <label for="Total Sales Goal">Total Sales Goal</label>
+                        <input type="number" oninput="totalLeadsGoal()" id="TotalSales1" name="TotalSales1"><br>
+                  <label for="Total Leads Goal">Total Leads Goal in %</label>
+                        <input type="tlCR" oninput="totalLeadsGoal()" id="tlCR" name="TotalLeads1"><br>
+                  <label for="Conversion Rates">Conversion Rates in %</label>
+                        <input type="number" oninput="webTrafficGoal()" id="wbCR" name="wbCR"><br>
+            </form>
+      </div>
+      <div class="results">
+            <h3>New Total Leads Goal:  <span id="ntlcalc">0</span></h3>
+            <h5 class ="error">Please enter values for the Total Sales Goal and Total Leads Goal</h5>
+            <h3>Website Traffic Goal:  <span id="wtrcalc">0</span></h3>
+      </div>
+      
 
 
 <script type="text/javascript" src="main.js"></script>
