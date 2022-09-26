@@ -20,11 +20,11 @@ label {
 }
 
 #wtrcalc {
-      color: green;
+      color: #2041e8;
 }
 
 #ntlcalc {
-      color: green;
+      color: #2041e8;
 }
 
 .error {
@@ -39,5 +39,6 @@ label {
 }
 
 .results h3 {
-      border: 3px solid green;
+      padding: 1rem;
+      border: 3px solid #2041e8;
 }
