@@ -8,6 +8,11 @@
       margin-left: 37.5%;
 }
 
+.instructions {
+      max-width: 80%;
+      margin: 0 auto;
+}
+
 .inputs form{
       margin-top: 2rem;
       max-width: 40%;
@@ -41,4 +46,6 @@ label {
 .results h3 {
       padding: 1rem;
       border: 3px solid #2041e8;
+      max-width: 255px;
+      margin: 1rem auto;
 }
