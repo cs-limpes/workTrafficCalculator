@@ -19,19 +19,33 @@
             
       </div>
       <div class="inputs">
+            <h2>Monthly Goals</h2>
             <form>
-                  <label for="Total Sales Goal">Total Sales Goal<span class="help" onclick="help()">?</span></label>
-                        <br><input type="number" oninput="totalLeadsGoal()" id="TotalSales1" name="TotalSales1"><br>
+                  <div class="box">
+                  <label for="Sales Goal">Sales</label>
+                        <br><input type="text" placeholder="20" oninput="totalLeadsGoal()" id="TotalSales1" name="TotalSales1"><br>
+                  </div>
+                  <div class="results">
+                        <h5 class ="error">Please enter values for the Total Sales Goal and Total Leads Goal</h5>
+                        <h3>Website Traffic Goal:  <br><span id="wtrcalc">0</span></h3>
+                        </div>
+                        <h3>New Total Leads Goal:  <br><span id="ntlcalc">0</span></h3>
+                  <h4>Refine Your Goals</h4>
+                  <p>By peronalizing the results with your conversion rates.</p>                
                   <label for="Total Leads Goal">Total Leads Goal in %</label>
                         <br><input type="number" oninput="totalLeadsGoal()" id="tlCR" name="TotalLeads1"><br>
-                  <label for="Conversion Rates">Conversion Rates in %</label>
+                  <label for="Conversion Rates">Website Conversion Rate</label>
                         <br><input type="number" oninput="webTrafficGoal()" id="wbCR" name="wbCR"><br>
             </form>
       </div>
-      <div class="results">
+      <!-- <div class="results">
             <h3>New Total Leads Goal:  <br><span id="ntlcalc">0</span></h3>
             <h5 class ="error">Please enter values for the Total Sales Goal and Total Leads Goal</h5>
             <h3>Website Traffic Goal:  <br><span id="wtrcalc">0</span></h3>
+      </div> -->
+      <div class="questions">
+            <h3>Questions?</h3>
+            <h2>Contact G2</h2>
       </div>
 
 

@@ -1,5 +1,5 @@
 .top {
-      background-color: #2041e8;
+      background-color: #003ded;
       /* background-color: #000; */
 }
 
@@ -14,14 +14,26 @@
 }
 
 .inputs form{
-      margin-top: 2rem;
-      max-width: 40%;
-      margin-left: 30%;
+      margin: 0 auto 0 auto;
+      padding: .5rem 2rem;
+      max-width: 20%;
       text-align: center;
 }
 
 label {
       line-height: 3rem;
+}
+
+.box {
+      background-color: #ffca00;
+}
+
+.box input {
+      border:none;
+      background-color: #ffca00;
+      text-align: center;
+      width: 4rem;
+      font-weight: bolder;
 }
 
 #wtrcalc {
