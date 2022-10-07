@@ -9,7 +9,6 @@
 
 <body>
       <div class="top">
-            <!-- <img src = "g2-logo-white.svg" > -->
             <img src = "g2-logo-white.svg">
       </div>
       <div class="instructions">
@@ -19,34 +18,38 @@
             
       </div>
       <div class="inputs">
-            <h2>Monthly Goals</h2>
             <form>
-                  <div class="box">
-                  <label for="Sales Goal">Sales</label>
-                        <br><input type="text" placeholder="20" oninput="totalLeadsGoal()" id="TotalSales1" name="TotalSales1"><br>
+                  <h2>Monthly Goals</h2>
+                  <div class="y-box box">
+                  <h3>Sales</h3>
+                        <input type="text" oninput="totalLeadsGoal()" id="TotalSales1" name="TotalSales1" value="15">
                   </div>
                   <div class="results">
-                        <h5 class ="error">Please enter values for the Total Sales Goal and Total Leads Goal</h5>
-                        <h3>Website Traffic Goal:  <br><span id="wtrcalc">0</span></h3>
+                        <div class="b-box box">
+                              <h3>Website Traffic  <br><span id="wtrcalc">0</span></h3>
                         </div>
-                        <h3>New Total Leads Goal:  <br><span id="ntlcalc">0</span></h3>
-                  <h4>Refine Your Goals</h4>
-                  <p>By peronalizing the results with your conversion rates.</p>                
-                  <label for="Total Leads Goal">Total Leads Goal in %</label>
-                        <br><input type="number" oninput="totalLeadsGoal()" id="tlCR" name="TotalLeads1"><br>
-                  <label for="Conversion Rates">Website Conversion Rate</label>
-                        <br><input type="number" oninput="webTrafficGoal()" id="wbCR" name="wbCR"><br>
+                        <div class="b-box box">
+                              <h3>Lead Volume<br><span id="ntlcalc">0</span></h3>
+                        </div>
+                  </div>
+                  <div class="refine">
+                        <h4>Refine Your Goals</h4>
+                        <p>By peronalizing the results with your conversion rates.</p>          
+                        <h3>Website Conversion %
+                              <input type="number" oninput="totalLeadsGoal()" id="wbCR" name="wbCR" value="1.5">
+                        </h3> 
+                        <h3>Lead Conversion %
+                              <input type="number" value="10" oninput="totalLeadsGoal()" id="tlCR" name="TotalLeads1">
+                        </h3>
+                       
+                  </div>
             </form>
       </div>
-      <!-- <div class="results">
-            <h3>New Total Leads Goal:  <br><span id="ntlcalc">0</span></h3>
-            <h5 class ="error">Please enter values for the Total Sales Goal and Total Leads Goal</h5>
-            <h3>Website Traffic Goal:  <br><span id="wtrcalc">0</span></h3>
-      </div> -->
-      <div class="questions">
+      <a href="mailto:aundine@grouptwo.com">
+      <div class="questions b-box box">
             <h3>Questions?</h3>
             <h2>Contact G2</h2>
-      </div>
+      </div></a>
 
 
 

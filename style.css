@@ -16,32 +16,53 @@
 .inputs form{
       margin: 0 auto 0 auto;
       padding: .5rem 2rem;
-      max-width: 20%;
+      max-width: 30%;
       text-align: center;
+      min-width: 189px;
 }
 
-label {
+/* label {
       line-height: 3rem;
-}
+} */
 
-.box {
+.y-box {
       background-color: #ffca00;
+      color: #000;
+      min-width: 189px;
+      padding: 0 2px;
 }
 
-.box input {
+.y-box input {
+      background-color: #ffca00;
+      color: #000;
+}
+
+.y-box h3 {
+      margin: 0;
+}
+
+.b-box {
+      background-color: #003ded;
+      padding: 0 2px;
+      color: #FFF;
+}
+
+.b-box input {
+      background-color: #003ded;
+}
+
+.box input{
       border:none;
-      background-color: #ffca00;
       text-align: center;
-      width: 4rem;
       font-weight: bolder;
 }
 
 #wtrcalc {
-      color: #2041e8;
+      color: #FFF;
 }
 
 #ntlcalc {
-      color: #2041e8;
+      color: #FFF;
 }
 
 .error {
@@ -51,13 +72,114 @@ label {
 
 .results {
       text-align: center;
-      max-width: 40%;
-      margin-left: 30%;
+      /* max-width: 40%; */
+      /* margin-left: 30%; */
 }
 
 .results h3 {
-      padding: 1rem;
       border: 3px solid #2041e8;
       max-width: 255px;
       margin: 1rem auto;
+}
+
+.refine {
+      width: 100%;
+
+
+}
+
+.refine p {
+      font-style: italic;
+      padding: 0;
+}
+
+.refine h4 {
+      text-align: center;
+      padding: 0;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.refine h3 {
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+}
+.refine input {
+      display: inline-block;
+      width: 3rem;
+      border-color: #ffca00;
+      border-width:5px;
+      border-style: solid;
+      margin-left: .5rem;
+      text-align: center;
+}
+
+.refine h3+h3 input {
+      margin-left: 2rem;
+}
+
+.questions {
+      margin: 0 auto 0 auto;
+      padding: 5px 0;
+      max-width: 30%;
+      text-align: center;
+      min-width: 189px;
+}
+
+.questions h3, h2{
+      margin: 0;
+}
+
+a {
+      text-decoration: none;
+      color: white;
+}
+
+@media screen and (max-width: 875px){
+      .refine {
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+      }
+
+      .refine h4 {
+            margin: 0 auto;
+      }
+
+      .refine h3 {
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+      }
+
+      .refine h3 input {
+            margin: 0 auto;
+      }
+      .refine h3, p {
+            text-align: center;
+      }
+
+      .refine h3+h3 input {
+            flex-direction: column;
+            display: flex;
+            margin: 0 auto;
+            justify-content: center;
+      }
+
+      .refine input {
+            margin: 0;
+      }
 }
