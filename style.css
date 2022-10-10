@@ -17,6 +17,82 @@ body {
       margin: 0 auto;
 }
 
+sup {
+      font-size: 0.8rem;
+}
+
+.salesTip {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+}
+
+.salesHelp {
+      visibility: hidden;
+      width: 20rem;
+      background-color: black;
+      color: white;
+      text-align: center;
+      border-radius: 15px;
+      padding: 5px 0;
+      position: absolute;
+      z-index: 1;
+      top: -8rem;
+      left: -5rem;
+}
+.salesTip:hover .salesHelp {
+      visibility: visible;
+}
+
+.webTip {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+}
+
+.webHelp {
+      visibility: hidden;
+      width: 20rem;
+      background-color: black;
+      color: white;
+      text-align: center;
+      border-radius: 15px;
+      padding: 5px 0;
+      position: absolute;
+      z-index: 1;
+      top: -8rem;
+      left: -5rem;
+}
+
+.webTip:hover .webHelp {
+      visibility: visible;
+}
+
+.leadTip {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+}
+
+.leadHelp {
+      visibility: hidden;
+      width: 20rem;
+      background-color: black;
+      color: white;
+      text-align: center;
+      border-radius: 15px;
+      padding: 5px 0;
+      position: absolute;
+      z-index: 1;
+      top: -8rem;
+      left: -5rem;
+}
+
+
+.leadTip:hover .leadHelp {
+      visibility: visible;
+}
+
 .inputs form{
       margin: 0 auto 0 auto;
       padding: .5rem 2rem;
@@ -149,6 +225,13 @@ input[type=number] {
 a {
       text-decoration: none;
       color: white;
+}
+
+.form-popup {
+      display: inline-block;
+      border: 3px solid #f1f1f1;
+      z-index:10;
+      border: 3px solid red;
 }
 
 @media screen and (max-width: 875px){

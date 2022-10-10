@@ -15,14 +15,14 @@
       <div class="instructions">
             <p>Help build your marketing and advertising budget by estimating the website traffic and lead volume required to generate your monthly sales goal. With this tool, you can edit the fields in yellow to drive the most accurate estimates. Your sales and marketing team can help you estimate the monthly spending required to drive results based on the results.</p>
       </div>
-      <div class="help" id="helpBox">
-            
-      </div>
-      <div class="inputs">
+        <div class="inputs">
             <form>
                   <h2>Monthly Goals</h2>
                   <div class="y-box box">
+                  <div class="salesTip">
                   <h3>Sales</h3>
+                  <span class="salesHelp">Sales help: 10 is a placeholder number for your total sales goal. Keeping seasonality and production, you can edit the number to reflect your desired goal for a given month.</span>
+                  </div>                 
                         <input type="text" oninput="totalLeadsGoal()" id="TotalSales1" name="TotalSales1" value="15">
                   </div>
                   <div class="results">
@@ -36,23 +36,27 @@
                   <div class="refine">
                         <h4>Refine Your Goals</h4>
                         <p>By peronalizing the results with your conversion rates.</p>          
+                        <div class="webTip">
                         <h3>Website Conversion %
                               <input type="number" oninput="totalLeadsGoal()" id="wbCR" name="wbCR" value="1.5">
-                        </h3> 
+                        </h3><span class="webHelp">Website conversion help: 1.5% is a placeholder for the conversion rate from website visitors to total leads. By editing the number, you will see the impact of an improved conversion rate.</span>
+                        </div>
+                        <div class="leadTip">
                         <h3>Lead Conversion %
                               <input type="number" value="10" oninput="totalLeadsGoal()" id="tlCR" name="TotalLeads1">
                         </h3>
+                        <span class="leadHelp">Lead conversion help: 10% is a placeholder for the conversion rate from total leads to total sales. You can edit the default number to reflect your current or desired conversion rate.</span>
+                        </div>
                        
                   </div>
             </form>
       </div>
-      <a href="mailto:aundine@grouptwo.com">
       <div class="questions b-box box">
+            <a href="https://share.hsforms.com/1wKceg1D0RTGtnUFT2J3I8Q2h4xk" target="new">
             <h3>Questions?</h3>
             <h2>Contact G2</h2>
-      </div></a>
-
-
+            </a>
+      </div>
 
 <script type="text/javascript" src="main.js"></script>
 </body>
